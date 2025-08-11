@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samung PopUp</title>
+    <link rel="stylesheet" href="samsungpopup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- <div onclick="popUp()"  class="container-popup"> -->
+    <div  class="container-popup">
+
+<div class="inner-popup">
+<i onclick="popUp()" class="fa-solid fa-xmark"></i>
+<h2>UNLOCK </h2>
+<h2> EXCLUSIVE ONLINE </h2>
+<h2>PERKS</h2>
+<img src="z.png" alt="" >
+<p>Sign up today to receive special discounts and members-only benefits.</p>
+<input type="email" name="" id="PopUp-input" placeholder="email address" required>
+<button class="PopUp-btn">SIGN UP</button>
+</div>
+
+    </div>
+<script>
+
+const popUp = () => {
+    document.querySelector(".container-popup").classList.toggle("container-popup-show");
+
+
+    // document.querySelector(".inner-popup").classList.toggle("inner-popup-show");
+    
+
+    console.log("helo")
+};
+
+// let Show=setTimeout(popUp,2000)
+let Show=setTimeout(() => {
+    popUp()
+},2000)
+
+</script>
+
+</body>
+</html>
